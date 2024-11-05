@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  port-forward:
+    build: .
+    container_name: port-forward
+    privileged: true
+    ports:
+      - "2222:2222"
+    volumes:
+      - ./iptables.sh:/iptables.sh

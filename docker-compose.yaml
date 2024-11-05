@@ -3,6 +3,7 @@ version: '3.8'
 services:
   port-forward:
     build: .
+    image: port-forward:latest
     container_name: port-forward
     privileged: true
     ports:
